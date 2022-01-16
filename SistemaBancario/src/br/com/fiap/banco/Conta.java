@@ -1,5 +1,7 @@
 package br.com.fiap.banco;
 
+import java.io.Serializable;
+
 /**
  * 
  * @author Nicolas Unger
@@ -8,12 +10,17 @@ package br.com.fiap.banco;
  */
 
 
-public class Conta {
+public class Conta implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	// Atributos de classe
-	int agencia;
-	int numero;
-	double saldo;
+	private int agencia;
+	private int numero;
+	private double saldo;
 	
 	// Construtor padrão
 	public Conta() {
@@ -26,6 +33,24 @@ public class Conta {
 		this.numero = numero;
 		this.saldo = saldo;
 	}
+	
+	
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}	
+	
 	
 	/**
 	 * Depositar da classe Conta
@@ -56,7 +81,7 @@ public class Conta {
 	 * Verifica o Saldo da Conta
 	 * @return Valor do Saldo da Conta
 	 */
-	public double verificarSaldo() {
+	public double getSaldo() {
 		
 		return this.saldo;
 		
