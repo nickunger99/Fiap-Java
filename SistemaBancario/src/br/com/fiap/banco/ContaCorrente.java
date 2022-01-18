@@ -23,6 +23,7 @@ public class ContaCorrente extends Conta {
 	}
 	
 	
+	//Sobrescrita do método da super classe (Conta)
 	@Override
 	public void retirar(double valor) {
 		valor += 10;
