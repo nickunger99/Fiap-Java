@@ -4,7 +4,10 @@ import com.fiap.entity.Produto;
 
 public class Caixa {
 
+	
 	public static void main(String[] args) {
+		
+		// REPETIÇÃO
 		int qtdProdutos = 5;
 		int registro = 0;
 		
@@ -33,6 +36,9 @@ public class Caixa {
 			System.out.println("O caixa registrou o produto " + i);
 		}
 	
+		
+		// ARRAYS
+		
 		/*
 		 * float[] valores = new float[5]; valores[0] = 10; valores[1] = 20; valores[2]
 		 * = 30; valores[3] = 40; valores[4] = 50;
@@ -80,6 +86,43 @@ public class Caixa {
 	
 	System.out.println("Produto localizado: " + localizacaoProduto[0][1].getNome());
 	
+	// STRINGS
+	
+	/*
+	 * String nome; nome = new String(); nome = "Maçã"; System.out.println(nome);
+	 * 
+	 * String nome2 = new String("Maçã"); System.out.println(nome2);
+	 * 
+	 * String nome3 = "Maçã"; System.out.println(nome3);
+	 */
+	
+	/*
+	 * String nome4 = null; System.out.println(nome4.length());
+	 */
+	
+	/*
+	 * String descricao = "Tipo Gala \n A maça mais doce do mercado";
+	 * System.out.println(descricao);
+	 * 
+	 * descricao = "Tipo Gala \t A maça mais doce do mercado";
+	 * System.out.println(descricao);
+	 * 
+	 * descricao = "Tipo Gala: \"A maça mais doce do mercado\"";
+	 * System.out.println(descricao);
+	 */
+	
+	String nome = new String("Maça");
+	String descricao = new String();
+	descricao = "tipo Gala, a maça mais doe do mercado";
+	
+	String propaganda = nome + " " + descricao;
+	System.out.println(propaganda);
+	
+	propaganda = nome.concat(" ").concat(descricao);
+	System.out.println(propaganda);
+	
+	propaganda += "!";
+	System.out.println(propaganda);
 	
 	
 	
