@@ -18,7 +18,7 @@ public class TestCollections {
 
 		
 		
-		
+		//mapear arrays
 		//Interface List e uso de Generics
 		//Generics não permite tipos primitos
 		List<String> carrinho1 = new ArrayList<String>();
